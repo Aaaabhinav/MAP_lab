@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<<<<<<< HEAD
     <title>MAP Lab</title>
   </head>
   <body>
@@ -10,3 +11,151 @@
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
+=======
+    <title>GitHub Practice Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">GitHub practice lab</p>
+          <h1>Practice the workflow before you push for real.</h1>
+          <p class="lede">
+            A focused sandbox for branches, commits, remotes, pull requests, and the
+            everyday GitHub flow.
+          </p>
+          <div class="hero-actions">
+            <button class="button button-primary" data-set-step="1">Start with clone</button>
+            <button class="button button-secondary" data-set-step="4">Jump to push</button>
+          </div>
+        </div>
+
+        <aside class="status-card">
+          <div class="status-head">
+            <span>Workspace status</span>
+            <strong id="status-label">Ready</strong>
+          </div>
+          <div class="status-meter">
+            <div class="status-fill" id="status-fill"></div>
+          </div>
+          <ul class="status-list" id="status-list">
+            <li class="done">Remote connected</li>
+            <li class="done">Branch selected</li>
+            <li class="active">Practice sequence loaded</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="content-grid">
+        <article class="panel command-panel">
+          <div class="panel-head">
+            <p class="panel-title">Command board</p>
+            <span>Click a command to mark it complete</span>
+          </div>
+          <div class="command-list" id="command-list">
+            <button class="command" data-step="1">
+              <span class="command-step">1</span>
+              <span>
+                <strong>git clone</strong>
+                <small>Pull the practice repo locally.</small>
+              </span>
+            </button>
+            <button class="command" data-step="2">
+              <span class="command-step">2</span>
+              <span>
+                <strong>git checkout -b feature</strong>
+                <small>Work in a clean branch.</small>
+              </span>
+            </button>
+            <button class="command" data-step="3">
+              <span class="command-step">3</span>
+              <span>
+                <strong>git add . && git commit</strong>
+                <small>Capture one focused change.</small>
+              </span>
+            </button>
+            <button class="command" data-step="4">
+              <span class="command-step">4</span>
+              <span>
+                <strong>git push origin feature</strong>
+                <small>Send the branch to GitHub.</small>
+              </span>
+            </button>
+          </div>
+        </article>
+
+        <article class="panel timeline-panel">
+          <div class="panel-head">
+            <p class="panel-title">Practice timeline</p>
+            <span>Track your progress through the flow</span>
+          </div>
+          <div class="timeline" id="timeline">
+            <div class="timeline-step active">
+              <span>1</span>
+              <div>
+                <strong>Clone</strong>
+                <p>Get the repo and inspect the remotes.</p>
+              </div>
+            </div>
+            <div class="timeline-step">
+              <span>2</span>
+              <div>
+                <strong>Branch</strong>
+                <p>Create a feature branch and switch context.</p>
+              </div>
+            </div>
+            <div class="timeline-step">
+              <span>3</span>
+              <div>
+                <strong>Commit</strong>
+                <p>Stage a change and write a clear commit message.</p>
+              </div>
+            </div>
+            <div class="timeline-step">
+              <span>4</span>
+              <div>
+                <strong>Push</strong>
+                <p>Publish the branch and verify the remote.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="panel cheat-panel">
+          <div class="panel-head">
+            <p class="panel-title">Quick cheat sheet</p>
+            <span>Useful commands to keep in view</span>
+          </div>
+          <div class="cheat-grid">
+            <div>
+              <strong>git status</strong>
+              <p>Check what changed before you commit.</p>
+            </div>
+            <div>
+              <strong>git log --oneline</strong>
+              <p>Review commit history at a glance.</p>
+            </div>
+            <div>
+              <strong>git remote -v</strong>
+              <p>Confirm the repo points to the right GitHub account.</p>
+            </div>
+            <div>
+              <strong>git branch</strong>
+              <p>See your current local branches.</p>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+>>>>>>> 569c9908e88117b844f78a6766cf0d9372e7e79c
